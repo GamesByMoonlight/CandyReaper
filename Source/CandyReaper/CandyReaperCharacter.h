@@ -14,6 +14,10 @@ class ACandyReaperCharacter : public ACharacter
 public:
 	ACandyReaperCharacter();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attribute")
+	float HP;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attribute")
+	float MaxHP;
 	// Called every frame.
 	virtual void Tick(float DeltaSeconds) override;
 

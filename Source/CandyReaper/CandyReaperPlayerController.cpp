@@ -29,12 +29,12 @@ void ACandyReaperPlayerController::SetupInputComponent()
 	// set up gameplay key bindings
 	Super::SetupInputComponent();
 
-	InputComponent->BindAction("SetDestination", IE_Pressed, this, &ACandyReaperPlayerController::OnSetDestinationPressed);
-	InputComponent->BindAction("SetDestination", IE_Released, this, &ACandyReaperPlayerController::OnSetDestinationReleased);
+	//InputComponent->BindAction("SetDestination", IE_Pressed, this, &ACandyReaperPlayerController::OnSetDestinationPressed);
+	//InputComponent->BindAction("SetDestination", IE_Released, this, &ACandyReaperPlayerController::OnSetDestinationReleased);
 
-	// support touch devices 
-	InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &ACandyReaperPlayerController::MoveToTouchLocation);
-	InputComponent->BindTouch(EInputEvent::IE_Repeat, this, &ACandyReaperPlayerController::MoveToTouchLocation);
+	//// support touch devices 
+	//InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &ACandyReaperPlayerController::MoveToTouchLocation);
+	//InputComponent->BindTouch(EInputEvent::IE_Repeat, this, &ACandyReaperPlayerController::MoveToTouchLocation);
 
 	InputComponent->BindAction("ResetVR", IE_Pressed, this, &ACandyReaperPlayerController::OnResetVR);
 }
@@ -94,7 +94,7 @@ void ACandyReaperPlayerController::SetNewMoveDestination(const FVector DestLocat
 		// We need to issue move command only if far enough in order for walk animation to play correctly
 		if ((Distance > 120.0f))
 		{
-			UAIBlueprintHelperLibrary::SimpleMoveToLocation(this, DestLocation);
+			//UAIBlueprintHelperLibrary::SimpleMoveToLocation(this, DestLocation);
 		}
 	}
 }
