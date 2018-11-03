@@ -9,8 +9,8 @@
 
 ACandyReaperPlayerController::ACandyReaperPlayerController()
 {
-	bShowMouseCursor = true;
-	DefaultMouseCursor = EMouseCursor::Crosshairs;
+	//bShowMouseCursor = true;
+	//DefaultMouseCursor = EMouseCursor::Crosshairs;
 }
 
 void ACandyReaperPlayerController::PlayerTick(float DeltaTime)
